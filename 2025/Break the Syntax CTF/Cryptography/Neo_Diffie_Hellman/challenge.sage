@@ -3,6 +3,8 @@ from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes, random
 from Crypto.Util.Padding import pad
 
+# Nhìn vào đề ta thấy đây là một bài liên quan đến logarithm rời rạc. Để ý rằng secret_a và secret_b nằm trong khoảng từ 1000000 đến 100000000 nên ta nghĩ ngay đến
+# thuật toán Pollard’s kangaroo để có thể tăng tốc độ giải logarithm rời rạc này!
 
 p = 1000117
 
